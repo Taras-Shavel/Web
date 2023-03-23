@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lab_2_Var_7</title>
+    <style>
+        .containerNameAndAge {
+            display: flex;
+            flex-direction: column;
+            width: 210px;
+            margin-bottom: 10px;
+            row-gap: 5px;
+
+        }
+        .containerHairAndEyes{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            row-gap: 5px;
+            margin-top: 10px;
+        }
+
+        .name, .age, .hair, .eyes {
+            display: flex;
+            justify-content: space-between;
+        }
+        .date{
+            margin-top: 10px;
+
+        }
+        .dateInput{
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 20px;
+        }
+        button{
+            height: 40px;
+        }
+
+    </style>
+</head>
+<body>
+<form>
+    <h1>Повідомте про себе:</h1>
+
+    <div class="containerNameAndAge">
+        <label class="name">
+            Ім'я: <input type="text" placeholder="Enter your name">
+        </label>
+
+        <label class="age">
+            Вік: <input type="text" placeholder="Enter your age">
+        </label>
+    </div>
+
+    <div>
+        Стать:
+        <label>
+            <input type="radio" name="gender" value="male"> чоловіча
+        </label>
+
+        <label>
+            <input type="radio" name="gender" value="female"> жіноча
+        </label>
+    </div>
+    
+    <div class="containerHairAndEyes">
+        <label class="hair">
+            Колір волосся: <input type="number" placeholder="Enter your color">
+        </label>
+
+        <label class="eyes">
+            Колір очей: <input type="number" placeholder="Enter your color">
+        </label>
+    </div>
+
+    <div class="date">
+        Введіть дату:
+        <label class="dateInput"><br>
+            <input type="date" style="margin: 5px 5px 0 0"> дд.мм.рр
+        </label>
+    </div>
+
+    <div>
+        <button>Відправити</button>
+        <button>Скинути</button>
+    </div>
+
+</form>
+
+</body>
+</html>
